@@ -1,4 +1,4 @@
-package ledcube;
+package ledcubeproject.models.ledcube;
 
 /**
  * Created by Jerry on 2017/3/2.

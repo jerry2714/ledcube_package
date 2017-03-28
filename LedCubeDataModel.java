@@ -1,4 +1,4 @@
-package ledcube;
+package ledcubeproject.models.ledcube;
 
 /**
  * Created by Jerry on 2017/3/22.
@@ -106,7 +106,7 @@ public class LedCubeDataModel extends LedCubeStructure {
     }
     private int combinePosAndColor(int pos, int color)
     {
-        int result = color & 0x00FFFF;
+        int result = color & 0x00FFFFFF;
         result = result | (pos << 24);
         return result;
     }
