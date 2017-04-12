@@ -4,7 +4,7 @@ package ledcubeproject.models.ledcube;
  * Created by Jerry on 2017/3/22.
  * 主體LED立方體的燈號資料模型
  * 此類別可設定、取得個別位置LED燈的顏色
- * 可產生4bytes可輸出燈號資料(1 byte 位置，3byte顏色，暫時以一個int表示(類ARGB模型，A的部分以1 byte位置取代))
+ * 可產生4bytes可輸出燈號資料(1 byte 位置，3byte顏色，暫時以一個int表示(類ARGB模型，A的部分以1 byte的位置資訊取代))
  * 內部有buffer簡單管理這些可輸出燈號資料，也可在外部進行管理
  */
 public class LedCubeDataModel extends LedCubeStructure {
@@ -110,6 +110,7 @@ public class LedCubeDataModel extends LedCubeStructure {
         result = result | (pos << 24);
         return result;
     }
+
 
 
 }
